@@ -3,11 +3,11 @@ import './contact.css'
 import {MdOutlineEmail} from 'react-icons/md'
 import {RiMessengerLine} from 'react-icons/ri'
 import {RiWhatsappLine} from 'react-icons/ri'
-import { useRef as UseRef } from 'react';
+import { useRef } from 'react';
 import emailjs from 'emailjs-com'
 
 const contact = () => {
-  const form = UseRef();
+  const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -33,19 +33,19 @@ const contact = () => {
             <MdOutlineEmail className='contact__option-icon' />
             <h4>Email</h4>
             <h5>honghao.2107@gmail.com</h5>
-            <a href="mailto:honghao.2107@gmail.com" target="_blank">Send a message</a>
+            <a href="mailto:honghao.2107@gmail.com" target="_blank" rel='noopener noreferrer'>Send a message</a>
           </article>
           <article className="contact__option">
             <RiMessengerLine className='contact__option-icon' />
             <h4>Message</h4>
             <h5>Hao Nguyen</h5>
-            <a href="https://www.messenger.com/t/100019215442737" target="_blank">Send a message</a>
+            <a href="https://www.messenger.com/t/100019215442737" target="_blank" rel='noopener noreferrer'>Send a message</a>
           </article>
           <article className="contact__option">
             <RiWhatsappLine className='contact__option-icon' />
             <h4>WhatsApp</h4>
             <h5>+0123456789</h5>
-            <a href="https://wa.me/+840968851036" target="_blank">Call Me</a>
+            <a href="https://wa.me/+840968851036" target="_blank" rel='noopener noreferrer'>Call Me</a>
           </article>
         </div>
        {/* End of Contact options */}

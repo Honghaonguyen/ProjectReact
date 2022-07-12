@@ -1,6 +1,6 @@
 {
-  "name": "react-portfolio-website-1",
-  "homepage": "https://github.com/Honghaonguyen/haonguyen.github.io.git",
+  "name": "react-project",
+  "homepage": "https://haocoder.host",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",

@@ -13,12 +13,13 @@
 :root {
     --color-bg: #1f1f38;
     --color-bg-variant: #2c2c6c;
-    --color-primary: #4db5ff;
+    --color-primary: #368ecd;
     --color-primary-variant: rgba(77, 181, 255, 0.4);
     --color-white: #fff;
     --color-light: rgba(255, 255, 255, 0.6);
+    --color-text: #2F1C6A;
 
-    --transition: all 400ms ease;
+    --transition: all 500ms ease;
 
     --container-width-lg: 75%;
     --container-width-md: 86%;
@@ -35,10 +36,10 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: var(--color-bg);
+    background: var(--color-white);
     color: var(--color-white);
     line-height: 1.7;
-    background-image: url(../src/assets/bg-texture.png);
+    background-image: url(../src/assets/cool-background.png);
 }
 
 /* ================= GENERAL STYLES =================== */
@@ -62,7 +63,7 @@ section {
 section > h2, 
 section > h5 {
     text-align: center;
-    color: var(--color-light);
+    color: var(--color-text);
 }
 
 section > h2 {
@@ -74,13 +75,18 @@ section > h2 {
     color: var(--color-light);
 }
 
+.text-dark {
+    color: #2F1C6A;
+}
+
+
 a {
     color: var(--color-primary);
     transition: var(--transition);
 }
 
 a:hover {
-    color: var(--color-white);
+    color: var(--color-text);
 }
 
 .btn {
@@ -95,14 +101,14 @@ a:hover {
 }
 
 .btn:hover {
-    background: var(--color-white);
-    color: var(--color-bg);
+    background: var(--color-primary);
+    color: var(--color-white);
     border-color: transparent;
 }
 
 .btn-primary {
     background: var(--color-primary);
-    color: var(--color-bg);
+    color: var(--color-text);
 }
 
 img {
@@ -118,7 +124,7 @@ img {
     }
 
     section {
-        margin-top: 6rem;
+        margin-top: 3rem;
     }
 }
 

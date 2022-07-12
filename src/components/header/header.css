@@ -1,6 +1,6 @@
 header {
     height: 100vh;
-    padding-top: 7rem;
+    padding-top: 2rem;
     overflow: hidden;
 }
 
@@ -8,6 +8,10 @@ header {
     text-align: center;
     height: 100%;
     position: relative;
+}
+
+.header__container h5 {
+    font-size: 0.7rem;
 }
 
 /* =============== CTA ================ */
@@ -27,6 +31,7 @@ header {
     position: absolute;
     left: 0;
     bottom: 3rem;
+    font-size: 1.1rem;
 }
 
 .header__socials::after {
@@ -43,10 +48,10 @@ header {
     height: 30rem;
     position: absolute;
     left: calc(50% - 11rem);
-    margin-top: 4rem;
+    margin-top: 3rem;
     border-radius: 12rem 12rem 0 0;
     overflow: hidden;
-    padding: 5rem 1.5rem 1.5rem 1.5rem;
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
 }
 
 /* ================= Scroll Down ============= */
@@ -56,7 +61,8 @@ header {
     bottom: 5rem;
     transform: rotate(90deg);
     font-weight: 300;
-    font-size: 0.9rem;
+    font-size: 1rem;
+    
 }
 
 /* ====================== MEDIA QUERIES (MEDIUM DEVICES) ================================ */
@@ -75,5 +81,5 @@ header {
     .header__socials,
     .scroll__down {
         display: none;
-    } 
+    }
 }

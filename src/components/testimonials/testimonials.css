@@ -13,7 +13,7 @@
 }
 
 .testimonial {
-    background: var(--color-primary-variant);
+    background: var(--color-primary);
     text-align: center;
     padding: 2rem;
     border-radius: 2rem;
@@ -21,7 +21,7 @@
 }
 
 .client__review {
-    color: var(--color-light);
+    color: var(--color-dark);
     font-weight: 300;
     display: block;
     width: 80%;

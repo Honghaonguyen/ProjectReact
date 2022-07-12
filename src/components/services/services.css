@@ -13,7 +13,7 @@
 }
 
 .service:hover {
-    background: transparent;
+    background: var(--color-bg);
     border-color: var(--color-primary-variant);
     cursor: default;
 }
