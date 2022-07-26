@@ -43,12 +43,35 @@ footer a:hover {
     border-radius: 0.7rem;
     display: flex;
     border: 1px solid transparent;
+    transform: scale(0.9);
 }
 
-.footer__socials a:hover {
-    background: var(--color-primary-variant);
+.footer__socials-icon-1:hover {
+    background: #1773EA;
     color: var(--color-white);
-    border-color: var(--color-bg);
+    transform: scale(1.1);
+    box-shadow: 0 0 35px #1773EA;
+}
+
+.footer__socials-icon-2:hover {
+    background: linear-gradient(200deg,#8C5CB3,#E70D1F, #F5BD0C);
+    color: var(--color-white);
+    transform: scale(1.1);
+    box-shadow: 0 0 35px #1773EA;
+}
+
+.footer__socials-icon-3:hover {
+    background: #F70000;
+    color: var(--color-white);
+    transform: scale(1.1);
+    box-shadow: 0 0 35px #F70000;
+}
+
+.footer__socials-icon-4:hover {
+    background: #1C9CEA;
+    color: var(--color-white);
+    transform: scale(1.1);
+    box-shadow: 0 0 35px #1773EA;
 }
 
 .footer__copyright {

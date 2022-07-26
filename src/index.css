@@ -11,13 +11,15 @@
 }
 
 :root {
-    --color-bg: #1f1f38;
-    --color-bg-variant: #2c2c6c;
-    --color-primary: #368ecd;
+    --color-bg: hsl(225, 50%, 38%);
+    --color-bg-variant: hsl(211, 61%, 40%);
+    --color-primary: #41ec63;
     --color-primary-variant: rgba(77, 181, 255, 0.4);
     --color-white: #fff;
     --color-light: rgba(255, 255, 255, 0.6);
     --color-text: #2F1C6A;
+    --title-color: hsl(250, 8%, 15%);
+    --shadow: hsla(0, 0%, 15%, .1);
 
     --transition: all 500ms ease;
 
@@ -39,7 +41,7 @@ body {
     background: var(--color-white);
     color: var(--color-white);
     line-height: 1.7;
-    background-image: url(../src/assets/cool-background.png);
+    background-color: #FAFBFF;
 }
 
 /* ================= GENERAL STYLES =================== */
@@ -63,7 +65,7 @@ section {
 section > h2, 
 section > h5 {
     text-align: center;
-    color: var(--color-text);
+    color: rgb(235, 45, 216);
 }
 
 section > h2 {
@@ -79,6 +81,10 @@ section > h2 {
     color: #2F1C6A;
 }
 
+.text-white {
+    color: #fff;
+    font-weight: 500;
+}
 
 a {
     color: var(--color-primary);
@@ -89,33 +95,116 @@ a:hover {
     color: var(--color-text);
 }
 
+@keyframes button-push {
+    50% {
+      transform: scale(0.9);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+
 .btn {
-    width: max-content;
-    display: inline-block;
-    color: var(--color-primary);
-    padding: 0.75em 1.2rem;
-    border-radius: 0.4rem;
-    cursor: pointer;
-    border: 1px solid var(--color-primary);
-    transition: var(--transition);
+    max-width: fit-content;
+    position: relative;
+    text-decoration: none;
+    background: hsl(353, 100%, 65%);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    padding: 10px 10px;
+    transition: 0.5s;
+    border-radius: 15px;
+    z-index: 1;
 }
 
 .btn:hover {
-    background: var(--color-primary);
-    color: var(--color-white);
-    border-color: transparent;
+    letter-spacing: 0.25em;
+    color: #fff;
+    box-shadow: 0 0 35px hsl(353, 100%, 65%);
+    cursor: pointer;
+  }
+
+  /* ========== Growing btn Hover Effects =========== */
+/* .btn::before {
+    content: '';
+    position: absolute;
+    inset: 2;
+    background: #27282c;
 }
+
+.btn span {
+    position: relative;
+    z-index: 1;
+}
+
+.btn i {
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+
+.btn i::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 100%;
+    transform: translateX(-50%);
+    height: 10px;
+    width: 10px;
+    background: #4a67dd;
+    border: 2px solid #4a67dd;
+    transition: 0.5s;
+}
+
+.btn:hover i::before {
+    left: 0%;
+    transform: translateX(-50%) rotate(45deg);
+    box-shadow: 35px 35px #4a67dd;
+}
+
+.btn i::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0%;
+    transform: translateX(-50%);
+    height: 10px;
+    width: 10px;
+    background: #4a67dd;
+    border: 2px solid #4a67dd;
+    transition: 0.5s;
+}
+
+.btn:hover i::after {
+    left: 100%;
+    transform: translateX(-50%) rotate(-45deg);
+    box-shadow: 35px -35px #4a67dd;
+} */
 
 .btn-primary {
     background: var(--color-primary);
-    color: var(--color-text);
+    color: var(--color-white);
+    text-align: center;
+    z-index: 1;
+}
+
+.btn-primary:hover {
+    color: var(--color-white);
+    box-shadow: 0 0 35px #41ec63;
+    animation: button-push 0.3s linear 1;
+    cursor: pointer;
 }
 
 img {
     display: block;
     width: 100%;
     object-fit: cover;
+    box-shadow: 0px 16px 13px 10px rgb(69 67 96 / 3%);
 }
+
 
 /* ====================== MEDIA QUERIES (MEDIUM DEVICES) ================================ */
 @media screen and (max-width: 1024px) {

@@ -36,6 +36,10 @@
     font-size: 0.8rem;
 }
 
+.contact__option a:hover {
+    color: var(--color-white);
+}
+
 /* ============ Form ============ */
 form {
     display: flex;
@@ -46,11 +50,16 @@ form {
 input, textarea {
     width: 100%;
     padding: 1.5rem;
-    border-radius: 0.5rem;
-    background: transparent;
+    border-radius: 1rem;
+    background-color: var(--color-white);
     border: 1px solid var(--color-primary);
     resize: none;
     color: var(--color-text);
+}
+
+.scroll__up {
+    margin: 4px 8% 4px 90%;
+    font-size: 1.8rem;
 }
 
 /* ====================== MEDIA QUERIES (MEDIUM DEVICES) ================================ */

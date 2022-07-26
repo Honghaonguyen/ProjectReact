@@ -14,8 +14,8 @@
 }
 
 .about__me-img {
-    border-radius: 2rem;
-    overflow: hidden;
+    border-radius: 3rem;
+    /* overflow: hidden; */
     transform: rotate(10deg);
     transition: var(--transition);
 }
@@ -39,10 +39,6 @@
     transition: var(--transition);
 }
 
-.about__card:hover {
-    background: var(--color-bg);
-}
-
 .about__icon {
     color: var(--color-primary);
     font-size: 1.4rem;
@@ -60,7 +56,7 @@
 
 .about__content p {
     margin: 2rem 0 2.6rem;
-    color: var(--color-text);
+    color: rgb(41, 130, 208);
 }
 
 /* ====================== MEDIA QUERIES (MEDIUM DEVICES) ================================ */

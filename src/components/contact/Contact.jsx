@@ -5,9 +5,12 @@ import {RiMessengerLine} from 'react-icons/ri'
 import {RiWhatsappLine} from 'react-icons/ri'
 import { useRef as UseRef } from 'react';
 import emailjs from 'emailjs-com'
+import {BsArrowUpSquareFill} from 'react-icons/bs'
+import { useState as UseState } from 'react'
 
 const contact = () => {
   const form = UseRef();
+  const [activeNav, setActiveNav] = UseState("#")
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -33,28 +36,33 @@ const contact = () => {
             <MdOutlineEmail className='contact__option-icon' />
             <h4>Email</h4>
             <h5>honghao.2107@gmail.com</h5>
-            <a href="mailto:honghao.2107@gmail.com" target="_blank">Send a message</a>
+            <a href="mailto:honghao.2107@gmail.com" target="_blank" rel="noreferrer">Send a message</a>
           </article>
           <article className="contact__option">
             <RiMessengerLine className='contact__option-icon' />
             <h4>Message</h4>
             <h5>Hao Nguyen</h5>
-            <a href="https://www.messenger.com/t/100019215442737" target="_blank">Send a message</a>
+            <a href="https://www.messenger.com/t/100019215442737" target="_blank" rel="noreferrer">Send a message</a>
           </article>
           <article className="contact__option">
             <RiWhatsappLine className='contact__option-icon' />
             <h4>WhatsApp</h4>
             <h5>+0123456789</h5>
-            <a href="https://wa.me/+840968851036" target="_blank">Call Me</a>
+            <a href="https://wa.me/+840968851036" target="_blank" rel="noreferrer">Call Me</a>
           </article>
         </div>
        {/* End of Contact options */}
         <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name='name' placeholder='Your Full Name' required />
-          <input type="email" name='email' placeholder='Your Email' required />
-          <textarea name="message" rows="7" placeholder='Your Message' required></textarea>
+          <input type="text" name='name' placeholder='Insert your Name' required />
+          <input type="email" name='email' placeholder='Insert your Email' required />
+          <textarea name="message" rows="7" placeholder='Write your Message' required></textarea>
           <button type='submit' className='btn btn-primary'>Send Message</button>
         </form>  
+      </div>
+
+      {/* ============== Scroll up =========== */}
+      <div className="scroll__up">
+        <a href="/#" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}><BsArrowUpSquareFill /></a>
       </div>
     </section>
   )

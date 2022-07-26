@@ -3,15 +3,15 @@ nav {
     width: max-content;
     display: block;
     padding: 0.7rem 1.7rem;
-    z-index: 2;
+    z-index: 10;
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
     bottom: 2rem;
     display: flex;
     gap: 0.8rem;
-    border-radius: 3rem;
-    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
 }
 
 nav a {
@@ -19,7 +19,7 @@ nav a {
     padding: 0.9rem;
     border-radius: 50px;
     display: flex;
-    color: var(--color-light);
+    color: var(--color-white);
     font-size: 1.2rem;
 }
 
@@ -28,6 +28,6 @@ nav a:hover {
 }
 
 nav a.active {
-    background: var(--color-primary);
-    color: var(--color-text);
+    background: #29fd53;
+    color: var(--color-white);
 }

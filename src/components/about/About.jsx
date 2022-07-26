@@ -1,6 +1,6 @@
 import React from 'react'
 import './about.css'
-import ME from '../../assets/me-about.jpg'
+import ME from '../../assets/avatar-4.png'
 import {FaAward} from 'react-icons/fa'
 import {FiUsers} from 'react-icons/fi'
 import {VscFolderLibrary} from 'react-icons/vsc'
@@ -35,12 +35,12 @@ const about = () => {
               <article className='about__card'>
                 <VscFolderLibrary className='about__icon' />
                 <h5>Projects</h5>
-                <small>10+ Completed</small>
+                <small>20+ Completed</small>
               </article>
              </div>
 
              <p>
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nemo officiis aut perferendis. Corporis maiores tenetur ad sed aliquid architecto, aspernatur cupiditate, commodi esse et nostrum, exercitationem perspiciatis impedit sunt?
+             I have always wanted to help people to communicate with others. With the exciting development of Web 2.0 and its impact on the World Wide Web, such as Google Documents and the ever-growing collection of social communication programs, I would very much like to be part of this evolution and expansion within the internet.
              </p>
              <a href="#contact" className='btn btn-primary'>Let's Talk</a>
         </div>

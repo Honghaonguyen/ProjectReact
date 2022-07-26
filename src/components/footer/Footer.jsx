@@ -8,7 +8,7 @@ import {FiTwitter} from 'react-icons/fi'
 const Footer = () => {
   return (
     <footer>
-      <a href="/#" className='footer__logo'>HaoNguyen</a>
+      <a href="/#" className='footer__logo'>Hao Nguyen</a>
 
       <ul className="permalinks">
         <li><a href="/#">Home</a></li>
@@ -21,10 +21,10 @@ const Footer = () => {
       </ul>
 
       <div className="footer__socials">
-        <a href="https://www.facebook.com/haonguyen2199/"><FaFacebookF /> </a>
-        <a href="https://www.instagram.com/crispham.21/"><FaInstagram /></a>
-        <a href="https://www.youtube.com/channel/UC-VOChFuBXBi_OHOzw96lnQ"><FiYoutube /></a>
-        <a href="https://twitter.com/zed690132"><FiTwitter /></a>
+        <a href="https://www.facebook.com/haonguyen2199/" className='footer__socials-icon-1'><FaFacebookF /> </a>
+        <a href="https://www.instagram.com/crispham.21/" className='footer__socials-icon-2'><FaInstagram /></a>
+        <a href="https://www.youtube.com/channel/UC-VOChFuBXBi_OHOzw96lnQ" className='footer__socials-icon-3'><FiYoutube /></a>
+        <a href="https://twitter.com/zed690132" className='footer__socials-icon-4'><FiTwitter /></a>
       </div>
 
       <div className="footer__copyright">
